@@ -7,16 +7,17 @@
 
     <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
-            <li @if($current=="home") class="nav-item active" @else class="nav-item" @endif>
+            <li @if($current=="home") class="nav-item active" @else class="nav-item" @endif
+                data-toggle="tooltip" data-placement="top" title="Home">
                 <a class="nav-link fas fa-home fa-2x" href="/"></a>
             </li>
-            <li @if($current=="produtos") class="nav-item active" @else class="nav-item"
-                @endif>
-                <a class="nav-link" href="/produtos">Produtos</a>
+            <li @if($current=="jogadores") class="nav-item active" @else class="nav-item"
+                @endif data-toggle="tooltip" data-placement="top" title="Menu Jogadores">
+                <a class="nav-link fas fa-users fa-2x" href="/sorteios"></a>
             </li>
             <li @if($current=="categorias") class="nav-item active" @else class="nav-item"
-                @endif>
-                <a class="nav-link" href="/categorias">Categorias</a>
+                @endif data-toggle="tooltip" data-placement="top" title="Menu Sorteios">
+                <a class="nav-link fas fa-dollar-sign fa-2x" href="/sorteios"></a>
             </li>
         </ul>
     </div>

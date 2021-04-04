@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Animais extends Model
 {
     use HasFactory;
+
+    public function valores_animais()
+    {
+        return $this->hasMany(ValoresAnimais::class,"codigo_animal_id");
+    }
 }

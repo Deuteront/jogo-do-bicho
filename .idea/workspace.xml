@@ -21,27 +21,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cc5f5a6-19b8-4127-884e-67166993c309" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Models/Animais.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Jogadores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Sorteios.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/ValoresAnimais.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/ganhadores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_203043_valores_animais.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_203048_sorteios.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_203049_ganhadores.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/animais.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/valores_animais.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/component_navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jogo-do-bicho.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorAnimais.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorGanhadores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorJogadores.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorSorteios.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jogadores/jogador-create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jogadores/jogador-update.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/jogadores/jogadores.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteio.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_202019_jogadores.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_201949_animais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Animais.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Animais.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_01_202019_jogadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_202019_jogadores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/component_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/component_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jogo-do-bicho.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jogo-do-bicho.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +180,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/sorteio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -198,6 +191,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views\sorteio" />
+      <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views\jogadores" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\public" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views" />
     </key>
@@ -218,7 +213,9 @@
       <updated>1617233451579</updated>
       <workItem from="1617233452869" duration="1995000" />
       <workItem from="1617235494096" duration="5373000" />
-      <workItem from="1617302738187" duration="13374000" />
+      <workItem from="1617302738187" duration="18602000" />
+      <workItem from="1617387009069" duration="600000" />
+      <workItem from="1617486895768" duration="12205000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial do projeto">
       <created>1617235769443</created>
@@ -227,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617235769443</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adicionando os valores dos animais">
+      <created>1617330616962</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617330616962</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +268,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial do projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit inicial do projeto" />
+    <MESSAGE value="Adicionando os valores dos animais" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando os valores dos animais" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1617235545316">
@@ -275,10 +280,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="#Project_Structure/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617234595118" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617313509295">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617331531638">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617313509295" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617331531638" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1617239232667">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -311,26 +316,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617234951286" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617235772024">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617330618364">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617235772024" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617330618364" />
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617313629733">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617313629733" />
-    <state x="1909" y="-22" width="1382" height="736" key="dock-window-1" timestamp="1617326088596">
-      <screen x="1920" y="0" width="1366" height="768" />
-    </state>
-    <state x="1909" y="-22" width="1382" height="736" key="dock-window-1/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617326088596" />
-    <state x="702" y="258" width="585" height="592" key="find.popup" timestamp="1617307409767">
+    <state x="710" y="99" width="983" height="599" key="dock-window-1" timestamp="1617492954651">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="702" y="258" width="585" height="592" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617307409767" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1617307911499">
+    <state x="710" y="99" width="983" height="599" key="dock-window-1/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617492954651" />
+    <state x="702" y="258" width="881" height="671" key="find.popup" timestamp="1617501587943">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617307911499" />
+    <state x="702" y="258" width="881" height="671" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617501587943" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1617494136155">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617494136155" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617237504889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

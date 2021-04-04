@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ControladorJogadores;
+use App\Http\Controllers\ControladorAnimais;
+use App\Http\Controllers\ControladorSorteios;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('jogo-do-bicho');
-});
+Route::get('/', [ControladorAnimais::class, 'index']);
+Route::resource('/jogadores', ControladorJogadores::class);
+Route::resource('/sorteios', ControladorSorteios::class);

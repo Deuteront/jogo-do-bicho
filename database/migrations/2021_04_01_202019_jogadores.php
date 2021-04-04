@@ -16,8 +16,8 @@ class Jogadores extends Migration
         Schema::create('jogadores', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nome');
-            $table->integer('telefone');
-            $table->integer('cpf');
+            $table->bigInteger('telefone');
+            $table->bigInteger('cpf');
             $table->timestamps();
         });
     }
