@@ -21,19 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cc5f5a6-19b8-4127-884e-67166993c309" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/sorteios/ganhador.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteios-antigos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/palpites/palpite.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControladorGanhadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorPalpites.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControladorJogadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorJogadores.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControladorPalpites.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorPalpites.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControladorSorteios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorSorteios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ValoresAnimais.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ValoresAnimais.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ganhadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Palpite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Sorteios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Sorteios.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_01_203048_sorteios.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_01_203048_sorteios.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_01_203049_ganhadores.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_04_031356_palpite.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/component_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/component_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sorteios/sorteio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sorteios/sorteios-antigos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteios-antigos.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +173,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/sorteios" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -190,11 +185,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views\sorteios" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views\sorteio" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views\jogadores" />
       <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\public" />
-      <recent name="C:\Users\paulo\Desktop\jogo do bicho\jogo-do-bicho\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -217,7 +212,7 @@
       <workItem from="1617387009069" duration="600000" />
       <workItem from="1617486895768" duration="16116000" />
       <workItem from="1617567923937" duration="7297000" />
-      <workItem from="1617659601972" duration="11381000" />
+      <workItem from="1617659601972" duration="17516000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial do projeto">
       <created>1617235769443</created>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617504230561</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criação do sortieo, ajustes finais dos palpites">
+      <created>1617671156257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617671156257</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +281,8 @@
     <MESSAGE value="Commit inicial do projeto" />
     <MESSAGE value="Adicionando os valores dos animais" />
     <MESSAGE value="Ajustes dos jogadores, criação do crud;&#10;criação do controler de animais; &#10;ajustes da lsitagem dos animais e numeros sorteados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajustes dos jogadores, criação do crud;&#10;criação do controler de animais; &#10;ajustes da lsitagem dos animais e numeros sorteados" />
+    <MESSAGE value="Criação do sortieo, ajustes finais dos palpites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação do sortieo, ajustes finais dos palpites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="419" key="#Composer" timestamp="1617235545316">
@@ -290,10 +293,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="#Project_Structure/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617234595118" />
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617660623382">
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617671513594">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617660623382" />
+    <state x="690" y="295" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617671513594" />
     <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1617660757756">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -334,26 +337,30 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617568952001" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617504232180">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617671157736">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617504232180" />
-    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617313629733">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617671157736" />
+    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617673205576">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617313629733" />
+    <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617673205576" />
     <state x="1913" y="0" width="932" height="775" key="dock-window-1" timestamp="1617665143893">
       <screen x="1920" y="0" width="1366" height="768" />
     </state>
     <state x="1913" y="0" width="932" height="775" key="dock-window-1/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617665143893" />
-    <state x="702" y="258" width="881" height="671" key="find.popup" timestamp="1617669534948">
+    <state x="1913" y="0" width="697" height="775" key="dock-window-2" timestamp="1617674574984">
+      <screen x="1920" y="0" width="1366" height="768" />
+    </state>
+    <state x="1913" y="0" width="697" height="775" key="dock-window-2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617674574984" />
+    <state x="702" y="258" width="881" height="671" key="find.popup" timestamp="1617677284824">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="702" y="258" width="881" height="671" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617669534948" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1617670028757">
+    <state x="702" y="258" width="881" height="671" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617677284824" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1617677110494">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617670028757" />
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617677110494" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617237504889">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

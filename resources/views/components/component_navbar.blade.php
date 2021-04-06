@@ -15,9 +15,9 @@
                 @endif data-toggle="tooltip" data-placement="top" title="Menu Jogadores">
                 <a class="nav-link fas fa-users fa-2x" href="/jogadores"></a>
             </li>
-            <li @if($current=="categorias") class="nav-item active" @else class="nav-item"
+            <li @if($current=="palpites") class="nav-item active" @else class="nav-item"
                 @endif data-toggle="tooltip" data-placement="top" title="Menu Sorteios">
-                <a class="nav-link fas fa-dollar-sign fa-2x" href="/sorteios"></a>
+                <a class="nav-link fas fa-dollar-sign fa-2x" href="/palpites"></a>
             </li>
         </ul>
     </div>

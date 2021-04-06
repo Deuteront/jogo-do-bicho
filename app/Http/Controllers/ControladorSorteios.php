@@ -18,10 +18,8 @@ class ControladorSorteios extends Controller
      */
     public function index()
     {
-        $animais = Animais::with('valores_animais')->get();
-        $jogadores = Jogadores::all();
-        $palpites = Palpite::with('animal', 'jogador')->where('sorteio_id', '=', null)->get();
-        return view('sorteios/sorteio', compact('animais', 'jogadores', 'palpites'));
+        $sorteios = Sorteios::with('animal')->get();
+        return view('sorteios/sorteios-antigos', compact('sorteios'));
     }
 
     /**
@@ -45,7 +43,7 @@ class ControladorSorteios extends Controller
         $valorAnimalSorteado = ValoresAnimais::with('animal')->where('numero_para_sorteio', '=', $numeroSorteado)->get();
         $animal = $valorAnimalSorteado[0]->animal;
         $sorteio = new Sorteios();
-        $sorteio->animal_id = $valorAnimalSorteado[0]->codigo_animal_id;
+        $sorteio->numero_animal_sorteado_id = $valorAnimalSorteado[0]->id;
         $sorteio->data_sorteio = date("Ymd");
         $sorteio->save();
         $palpites = Palpite::with('animal', 'jogador')->where('sorteio_id', '=', null)->get();
@@ -57,13 +55,12 @@ class ControladorSorteios extends Controller
         }
         $ganhadores = [];
         foreach ($palpites as $palpite) {
-            if ($palpite->codigo_animal_id === $sorteio->animal_id) {
+            if ($palpite->codigo_animal_id === $animal->id) {
                 $palpite->jogador->animal = $palpite->animal;
                 array_push($ganhadores, $palpite->jogador);
             }
         }
         return view('sorteios/ganhador', compact('sorteio', 'palpites', 'ganhadores', 'animal'));
-
     }
 
     public function palpitar(Request $request)

@@ -13,7 +13,7 @@
                         Data
                     </th>
                     <th>
-                       Numero Sorteado / Animal Representado
+                        Numero Sorteado / Animal Representado
                     </th>
                     <th>
                         Ações
@@ -24,9 +24,11 @@
                 @if(count($sorteios) > 0)
                 @foreach($sorteios as $sorteio)
                 <tr>
-                    <td>{{ $sorteio->data }}</td>
-                    <td>{{ $sorteio->numero_sorteado->numero_sorteado }} / {{ $sorteio->animal->nome }}</td>
-                    <td>{{ $sorteio->telefone }}</td>
+                    <td>{{ $sorteio->data_sorteio }}</td>
+                    <td>{{ $sorteio->numero_animal_sorteado_id }} / {{ $sorteio->animal->nome }}</td>
+                    <td>
+                        <a class="btn btn-info" href="{{ route ('sorteios.show', $sorteio['id']) }}">Ganhadores</a>
+                    </td>
                 </tr>
                 @endforeach
                 @else

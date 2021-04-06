@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Animais;
+use App\Models\Jogadores;
 use App\Models\Palpite;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,10 @@ class ControladorPalpites extends Controller
      */
     public function index()
     {
-        //
+        $animais = Animais::with('valores_animais')->get();
+        $jogadores = Jogadores::all();
+        $palpites = Palpite::with('animal', 'jogador')->where('sorteio_id', '=', null)->get();
+        return view('palpites/palpite', compact('animais', 'jogadores', 'palpites'));
     }
 
     /**
@@ -39,7 +44,7 @@ class ControladorPalpites extends Controller
         $palpite->codigo_animal_id = $request->input('animalId');
         $palpite->jogador_id = $request->input('jogadorId');
         $palpite->save();
-        return redirect('sorteios');
+        return redirect('palpites');
     }
 
     /**
@@ -88,6 +93,6 @@ class ControladorPalpites extends Controller
         if (isset($prd)) {
             $prd->delete();
         }
-        return redirect('sorteios');
+        return redirect('palpites');
     }
 }
