@@ -15,9 +15,9 @@ class Sorteios extends Migration
     {
         Schema::create('sorteios', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->date('dataSorteio');
-            $table->bigInteger('numero_animal_sorteado_id')->unsigned();
-            $table->foreign('numero_animal_sorteado_id')->references('id')->on('valores_animais');
+            $table->date('data_sorteio');
+            $table->bigInteger('animal_id')->unsigned();
+            $table->foreign('animal_id')->references('id')->on('animais');
             $table->timestamps();
         });
     }

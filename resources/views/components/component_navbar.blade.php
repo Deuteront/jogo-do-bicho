@@ -13,7 +13,7 @@
             </li>
             <li @if($current=="jogadores") class="nav-item active" @else class="nav-item"
                 @endif data-toggle="tooltip" data-placement="top" title="Menu Jogadores">
-                <a class="nav-link fas fa-users fa-2x" href="/sorteios"></a>
+                <a class="nav-link fas fa-users fa-2x" href="/jogadores"></a>
             </li>
             <li @if($current=="categorias") class="nav-item active" @else class="nav-item"
                 @endif data-toggle="tooltip" data-placement="top" title="Menu Sorteios">

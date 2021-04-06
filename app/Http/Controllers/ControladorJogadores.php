@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categoria;
 use App\Models\Jogadores;
 
 use Illuminate\Http\Request;

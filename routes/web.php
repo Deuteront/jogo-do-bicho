@@ -3,6 +3,7 @@
 use App\Http\Controllers\ControladorJogadores;
 use App\Http\Controllers\ControladorAnimais;
 use App\Http\Controllers\ControladorSorteios;
+use App\Http\Controllers\ControladorPalpites;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ControladorAnimais::class, 'index']);
 Route::resource('/jogadores', ControladorJogadores::class);
 Route::resource('/sorteios', ControladorSorteios::class);
+Route::resource('/palpites', ControladorPalpites::class);

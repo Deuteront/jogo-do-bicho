@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Palpite;
 use Illuminate\Http\Request;
 
-class ControladorGanhadores extends Controller
+class ControladorPalpites extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -29,18 +30,22 @@ class ControladorGanhadores extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        $palpite = new Palpite();
+        $palpite->codigo_animal_id = $request->input('animalId');
+        $palpite->jogador_id = $request->input('jogadorId');
+        $palpite->save();
+        return redirect('sorteios');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -51,7 +56,7 @@ class ControladorGanhadores extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -62,8 +67,8 @@ class ControladorGanhadores extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -74,11 +79,15 @@ class ControladorGanhadores extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        $prd = Palpite::find($id);
+        if (isset($prd)) {
+            $prd->delete();
+        }
+        return redirect('sorteios');
     }
 }
