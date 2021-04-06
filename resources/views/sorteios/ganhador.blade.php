@@ -1,4 +1,4 @@
-@extends('layout.app', ["current" => "home"])
+@extends('layout.app', ["current" => "palpites"])
 @section('body')
 <div class="card">
     <div class="card-header">

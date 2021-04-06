@@ -1,4 +1,4 @@
-@extends('layout.app', ["current" => "home"])
+@extends('layout.app', ["current" => "palpites"])
 @section('body')
 <div class="row" style="margin-bottom: 25px">
     <div class="col-sm-10">

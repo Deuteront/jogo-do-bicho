@@ -21,9 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0cc5f5a6-19b8-4127-884e-67166993c309" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ControladorSorteios.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ControladorSorteios.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/sorteios/ganhador.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sorteios/ganhador.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sorteios/sorteio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sorteios/sorteios-antigos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sorteios/sorteios-antigos.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +207,7 @@
       <workItem from="1617387009069" duration="600000" />
       <workItem from="1617486895768" duration="16116000" />
       <workItem from="1617567923937" duration="7297000" />
-      <workItem from="1617659601972" duration="18152000" />
+      <workItem from="1617659601972" duration="18316000" />
     </task>
     <task id="LOCAL-00001" summary="Commit inicial do projeto">
       <created>1617235769443</created>
@@ -244,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617677388493</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Criação do sortieo, ajustes finais dos palpites">
+      <created>1617678043336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617678043336</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,10 +346,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617568952001" />
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617677390270">
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2" timestamp="1617678044383">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617677390270" />
+    <state x="552" y="273" key="Vcs.Push.Dialog.v2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617678044383" />
     <state x="777" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617673205576">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -355,10 +362,10 @@
       <screen x="1920" y="0" width="1366" height="768" />
     </state>
     <state x="1913" y="0" width="697" height="775" key="dock-window-2/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617674574984" />
-    <state x="702" y="258" width="881" height="671" key="find.popup" timestamp="1617677703094">
+    <state x="702" y="258" width="881" height="671" key="find.popup" timestamp="1617678108465">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="702" y="258" width="881" height="671" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617677703094" />
+    <state x="702" y="258" width="881" height="671" key="find.popup/0.0.1920.1080/1920.0.1366.768@0.0.1920.1080" timestamp="1617678108465" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1617677110494">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
