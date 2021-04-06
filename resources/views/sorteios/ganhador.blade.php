@@ -2,13 +2,7 @@
 @section('body')
 <div class="card">
     <div class="card-header">
-        <h4>Ganhadores Sorteio:
-            {{ $sorteio->data_sorteio[6].$sorteio->data_sorteio[7].'/'.
-            $sorteio->data_sorteio[4].$sorteio->data_sorteio[5] .'/'.
-            $sorteio->data_sorteio[0].$sorteio->data_sorteio[1].$sorteio->data_sorteio[2].$sorteio->data_sorteio[3] }}
-
-
-            - {{ $animal->nome }}</h4>
+        <h4>Ganhadores Sorteio: {{ $sorteio->data_sorteio }} - {{ $animal->nome }}</h4>
     </div>
     <div class="card-body">
         <div style="margin-top: 10px;">

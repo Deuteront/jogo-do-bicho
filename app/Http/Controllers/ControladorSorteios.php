@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Animais;
-use App\Models\Jogadores;
 use App\Models\Palpite;
 use App\Models\Sorteios;
 use App\Models\ValoresAnimais;
@@ -18,7 +16,7 @@ class ControladorSorteios extends Controller
      */
     public function index()
     {
-        $sorteios = Sorteios::with('animal')->get();
+        $sorteios = Sorteios::with('animal', 'valores_animais')->get();
         return view('sorteios/sorteios-antigos', compact('sorteios'));
     }
 
@@ -76,7 +74,17 @@ class ControladorSorteios extends Controller
      */
     public function show($id)
     {
-        //
+        $sorteio = Sorteios::with('animal', 'valores_animais')->find($id);
+        $palpites = Palpite::with('animal', 'jogador')->where('sorteio_id', '=', $sorteio->id)->get();
+        $ganhadores = [];
+        $animal = $sorteio->animal;
+        foreach ($palpites as $palpite) {
+            if ($palpite->codigo_animal_id === $sorteio->animal->id) {
+                $palpite->jogador->animal = $palpite->animal;
+                array_push($ganhadores, $palpite->jogador);
+            }
+        }
+        return view('sorteios/ganhador', compact('sorteio', 'palpites', 'ganhadores', 'animal'));
     }
 
     /**
