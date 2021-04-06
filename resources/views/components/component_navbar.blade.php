@@ -9,7 +9,7 @@
         <ul class="navbar-nav mr-auto">
             <li @if($current=="home") class="nav-item active" @else class="nav-item" @endif
                 data-toggle="tooltip" data-placement="top" title="Home">
-                <a class="nav-link fas fa-home fa-2x" href="/Home"></a>
+                <a class="nav-link fas fa-home fa-2x" href="/home"></a>
             </li>
             <li @if($current=="jogadores") class="nav-item active" @else class="nav-item"
                 @endif data-toggle="tooltip" data-placement="top" title="Menu Jogadores">
